@@ -27,7 +27,7 @@ class Form(StatesGroup):
 
 @dp.message(CommandStart(), StateFilter(default_state))
 async def process_start_command(message: Message):
-    await message.answer(text='Привет, этот бот рассчитает индекс ANI (index ANI)\n\n'
+    await message.answer(text='Привет, этот бот рассчитает индекс ANI\n\n'
                               'Чтобы перейти к заполнению анкеты - '
                               'отправьте команду /fillform')
 
