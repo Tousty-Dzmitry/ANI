@@ -36,6 +36,7 @@ async def process_fillform_command(message: Message, state: FSMContext):
     await message.answer(text='Введите пол пациента (m/w)')
     await state.set_state(Form.sex)
 
+
 @dp.message(Form.sex)
 async def process_name(message: Message, state: FSMContext) -> None:
     #await message.answer(f'Пол пациента:\r\n{message.text}\r\nВведите MCV')
